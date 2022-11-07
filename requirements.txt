@@ -2,4 +2,5 @@ Flask==2.0.3
 Flask-RESTful==0.3.9
 requests==2.22.0
 gunicorn==20.0.4
-flask-cors==1.19.2
+flask-cors
+numpy==1.19.2
