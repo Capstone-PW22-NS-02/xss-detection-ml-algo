@@ -13,10 +13,10 @@ def fun():
 
     product = request.json
     text = product['description']
-    loaded_vec = pickle.load(open('model.sav', 'rb'))
+    loaded_vec = pickle.load(open('vec.sav', 'rb'))
     dt = np.array([text])
     p=loaded_vec.transform(dt).toarray()
-    loaded_model = pickle.load(open('vec.sav', 'rb'))
+    loaded_model = pickle.load(open('model.sav', 'rb'))
     return str(loaded_model.predict(p)[0])  
 
     
